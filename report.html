@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost & Found Radar - Report Item</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        input,
+        select,
+        textarea {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Campus Lost & Found Radar</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Item</a>
+            <a href="lost.html">Lost Items</a>
+            <a href="found.html">Found Items</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Report an Item</h2>
+
+            <p>Use this form to report a lost or found item.</p>
+
+            <form>
+                <div>
+                    <label for="item-name">Item Name:</label>
+                    <input type="text" id="item-name" name="item-name">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="item-type">Item Type:</label>
+                    <select id="item-type" name="item-type">
+                        <option value="lost">Lost</option>
+                        <option value="found">Found</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="description">Description:</label>
+                    <br>
+                    <textarea id="description" name="description" rows="5" cols="40"></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="contact">Contact:</label>
+                    <input type="text" id="contact" name="contact">
+                </div>
+
+                <br>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Campus Lost & Found Radar</p>
+        <p>University Student Project</p>
+    </footer>
+
+</body>
+</html>
